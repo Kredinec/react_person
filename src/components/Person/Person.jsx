@@ -4,9 +4,9 @@ export const Person = ({ person }) => {
 
   const getPartnerText = () => {
     if (!isMarried) return 'not married';
-    const parentRole = sex === 'f' ? 'husband' : 'wife';
+    const partnerRole = sex === 'm' ? 'wife' : 'husband';
 
-    return `${partnerName} is my ${parentRole}`;
+    return `${partnerName} is my ${partnerRole}`;
   };
 
   return (
